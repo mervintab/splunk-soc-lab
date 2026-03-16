@@ -19,36 +19,8 @@ And receive structured, actionable intelligence instantly.
 ## Architecture
 
 ```
-┌─────────────────────────────────────────────────────────┐
-│                     Your Devices                         │
-│                                                         │
-│  ┌──────────────┐          ┌──────────────────────────┐ │
-│  │   Desktop    │          │        Laptop            │ │
-│  │  (Home)      │          │   (Home / School / Go)   │ │
-│  │              │          │                          │ │
-│  │ Claude       │          │ Claude Desktop           │ │
-│  │ Desktop      │          │ + Tailscale VPN          │ │
-│  │ + MCP Server │          │ + MCP Server             │ │
-│  └──────┬───────┘          └────────────┬─────────────┘ │
-└─────────┼──────────────────────────────┼───────────────┘
-          │ Direct IP                    │ Tailscale VPN
-          │ (Home network)               │ (Any network)
-          ▼                              ▼
-┌─────────────────────────────────────────────────────────┐
-│                   Vultr Cloud VM                         │
-│                  Ubuntu 22.04 LTS                        │
-│                                                         │
-│  ┌─────────────────────┐   ┌────────────────────────┐  │
-│  │  Splunk Enterprise  │   │      Tailscale VPN     │  │
-│  │  - Port 8000 (UI)   │   │   (Secure Remote       │  │
-│  │  - Port 8089 (API)  │   │    Access)             │  │
-│  └─────────────────────┘   └────────────────────────┘  │
-│                                                         │
-│  ┌─────────────────────────────────────────────────┐   │
-│  │              UFW Firewall                        │   │
-│  │  + Vultr Cloud Firewall                         │   │
-│  └─────────────────────────────────────────────────┘   │
-└─────────────────────────────────────────────────────────┘
+![Network Architecture](screenshots/architecture.png)
+
 ```
 
 ---
