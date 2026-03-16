@@ -19,7 +19,7 @@ And receive structured, actionable intelligence instantly.
 ## Architecture
 
 ```
-![Network Architecture](screenshots/architecture.png)
+![Network Architecture]([screenshots/architecture.png](https://github.com/mervintab/splunk-soc-lab/blob/main/screenshots/architecture.png))
 
 ```
 
