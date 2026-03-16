@@ -236,12 +236,53 @@ splunk-soc-lab/
 
 ---
 
+## Inspiration & Original Work
+
+This project was inspired by and built upon the following outstanding open source work:
+
+### chalithah/splunk-claude-mcp-agent
+The core MCP server powering this project was built by [chalithah](https://github.com/chalithah) and is available at:
+[https://github.com/chalithah/splunk-claude-mcp-agent](https://github.com/chalithah/splunk-claude-mcp-agent)
+
+This project demonstrated the concept of a local AI SOC analyst — bringing the AI to the data rather than moving sensitive log data to the cloud. The Mimikatz/Atomic Red Team detection demo in that repository was the direct inspiration for building this lab.
+
+### livehybrid/splunk-mcp
+A broader Splunk MCP implementation with additional features including index management, user management, and KV store operations:
+[https://github.com/livehybrid/splunk-mcp](https://github.com/livehybrid/splunk-mcp)
+
+### mcp-server-wazuh (gbrigandi)
+The original concept of connecting a SIEM to Claude via MCP was first explored with Wazuh by [gbrigandi](https://github.com/gbrigandi):
+[https://github.com/gbrigandi/mcp-server-wazuh](https://github.com/gbrigandi/mcp-server-wazuh)
+
+---
+
+## Built With Claude AI
+
+This entire project — from architecture design to implementation, troubleshooting, and documentation — was built interactively with **Claude** by [Anthropic](https://www.anthropic.com), using Claude Desktop with the Model Context Protocol.
+
+Claude assisted with:
+- Cloud infrastructure planning and VM sizing
+- Step-by-step Linux server hardening
+- Splunk installation and configuration
+- WireGuard and Tailscale VPN setup and troubleshooting
+- MCP server configuration and debugging
+- Security analysis of real attack data
+- Repository documentation
+
+> *"Instead of moving data to the AI, this tool brings the AI to the data."*
+> — chalithah/splunk-claude-mcp-agent
+
+---
+
 ## Credits
 
 - MCP Server: [chalithah/splunk-claude-mcp-agent](https://github.com/chalithah/splunk-claude-mcp-agent)
-- Splunk Enterprise: [splunk.com](https://www.splunk.com)
-- Claude Desktop: [claude.ai](https://claude.ai)
-- Tailscale: [tailscale.com](https://tailscale.com)
+- Alternative MCP: [livehybrid/splunk-mcp](https://github.com/livehybrid/splunk-mcp)
+- Wazuh MCP Inspiration: [gbrigandi/mcp-server-wazuh](https://github.com/gbrigandi/mcp-server-wazuh)
+- AI Assistant: [Claude by Anthropic](https://claude.ai)
+- SIEM: [Splunk Enterprise](https://www.splunk.com)
+- VPN: [Tailscale](https://tailscale.com)
+- Cloud: [Vultr](https://www.vultr.com)
 
 ---
 
