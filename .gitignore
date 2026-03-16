@@ -1,0 +1,32 @@
+# Environment files
+.env
+*.env
+
+# Private keys
+*.key
+*_private*
+*private_key*
+
+# Config files with real credentials
+claude_desktop_config.json
+
+# Keep only the example
+!claude_desktop_config.example.json
+
+# WireGuard configs with real keys
+wg0.conf
+
+# Keep only the example
+!wg0.conf.example
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Screenshots with sensitive info (add your own selectively)
+# screenshots/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo

@@ -1,0 +1,25 @@
+notepad C:\Users\mervi\Projects\splunk-soc-lab\mcp-server\claude_desktop_config.example.json
+```
+Click **Yes** to create new file.
+
+**Step 2 — Copy and paste this entire text into Notepad:**
+```
+{
+  "mcpServers": {
+    "splunk": {
+      "command": "python",
+      "args": [
+        "C:\\Users\\YOUR_USERNAME\\Projects\\splunk-claude-mcp-agent\\splunk_mcp.py",
+        "stdio"
+      ],
+      "env": {
+        "SPLUNK_HOST": "YOUR_SPLUNK_HOST_OR_TAILSCALE_IP",
+        "SPLUNK_PORT": "8089",
+        "SPLUNK_USERNAME": "mcp_agent",
+        "SPLUNK_PASSWORD": "YOUR_MCP_AGENT_PASSWORD",
+        "SPLUNK_SCHEME": "https",
+        "VERIFY_SSL": "false"
+      }
+    }
+  }
+}
