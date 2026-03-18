@@ -172,7 +172,8 @@ What ports are being targeted most by the UFW firewall blocks?
 - Tool: Invoke-AtomicRedTeam
 - Result: Claude detected 2 High severity indicators
   and 218 suspicious PowerShell events in 15 minutes
-  
+
+---
 ## Real-World Results
 
 Within 24 hours of deployment this lab detected:
@@ -183,7 +184,6 @@ Within 24 hours of deployment this lab detected:
 - Both subnets blocked via UFW after AI-assisted analysis
 
 ## Sample Results
-
 
 ![Sample High Severity Incident
 ](https://github.com/mervintab/splunk-soc-lab/blob/main/screenshots/high_severity_detection.png)
