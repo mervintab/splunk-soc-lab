@@ -278,8 +278,8 @@ Claude assisted with:
 
 ## License
 
-MIT License — feel free to use this as a reference for your own SOC lab.
-- Cloud: [Vultr](https://www.vultr.com)
+[MIT License](https://github.com/mervintab/splunk-soc-lab/blob/main/architecture/LICENSE)
+Feel free to use this as a reference for your own SOC lab.
 ---
 
 ## Author
